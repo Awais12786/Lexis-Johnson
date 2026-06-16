@@ -1,6 +1,6 @@
 export default function RevealBox() {
   return (
-    <section className="py-16 md:py-32 max-w-[1440px] mx-auto px-6 md:px-16">
+    <section id="reveal-box" className="py-16 md:py-32 max-w-[1440px] mx-auto px-6 md:px-16">
       <div className="glass-card rounded-xl p-8 md:p-16 relative overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10 items-center">
           <div>

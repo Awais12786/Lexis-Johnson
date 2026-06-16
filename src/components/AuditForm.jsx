@@ -66,7 +66,7 @@ export default function AuditForm() {
         setIsSubmitting(false);
         setIsSubmitted(true);
         // Generate a random high-ticket VIP application ID for realism
-        const randomId = 'CHRONOS-VIP-' + Math.floor(1000 + Math.random() * 9000);
+        const randomId = 'TAGG-VIP-' + Math.floor(1000 + Math.random() * 9000);
         setApplicationId(randomId);
       }, 2000);
     }

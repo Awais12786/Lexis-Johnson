@@ -1,6 +1,6 @@
 export default function SignalGrid() {
   return (
-    <section className="py-16 md:py-32 bg-[#0A1628] relative border-t border-white/5">
+    <section id="signal-grid" className="py-16 md:py-32 bg-[#0A1628] relative border-t border-white/5">
       <div className="max-w-[1440px] mx-auto px-6 md:px-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 relative z-10">
           <div className="glass-card p-6 rounded-lg text-center shadow-[0_0_15px_rgba(255,225,109,0.05)]">

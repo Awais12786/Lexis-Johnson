@@ -14,14 +14,14 @@
 
 @layer components {
   .btn-gold {
-    background: linear-gradient(135deg, #ffe16d, #e9c400);
+    background: linear-gradient(135deg, #FFD700, #FFC107);
     color: #0a1628;
     border: none;
-    box-shadow: 0 0 20px rgba(255, 225, 109, 0.3);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
     transition: box-shadow 0.3s ease;
   }
   .btn-gold:hover {
-    box-shadow: 0 0 30px rgba(255, 225, 109, 0.5);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
   }
   .glass-card {
     background: rgba(20, 32, 56, 0.2);
