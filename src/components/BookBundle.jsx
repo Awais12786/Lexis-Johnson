@@ -13,7 +13,8 @@ export default function BookBundle() {
       detailedDesc: "This introductory volume maps out your basic timing windows. Learn to stop forcing sales launches and expansion during naturally restrictive seasonal cycles.",
       status: "UNLOCKED",
       badgeText: "Complimentary with Audit",
-      actionText: "Claim My Digital Copy Below",
+      actionText: "Get Book 1",
+      actionLink: "https://www.amazon.ca/Timing-Aggregator-Recognition-Founders-Decisions/dp/B0GSZL7Y2Y",
       icon: "auto_stories",
     },
     {
@@ -68,15 +69,19 @@ export default function BookBundle() {
 
   const handleStepClick = (id) => setActiveStep(id);
 
-  const handleActionClick = () => {
-    const formElement = document.getElementById('strategic-application-gateway');
-    if (formElement) {
-      formElement.scrollIntoView({ behavior: 'smooth' });
+  const handleActionClick = (step) => {
+    if (step.actionLink) {
+      window.open(step.actionLink, '_blank', 'noopener,noreferrer');
+    } else {
+      const formElement = document.getElementById('strategic-application-gateway');
+      if (formElement) {
+        formElement.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
   return (
-    <section className="py-32 bg-[#0A1628] border-t border-white/5 relative overflow-hidden">
+    <section className="py-16 md:py-32 bg-[#0A1628] border-t border-white/5 relative overflow-hidden">
       
       {/* Ambient Depth Lights */}
       <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-[#ffe16d] opacity-[0.015] rounded-full blur-[120px] pointer-events-none"></div>
@@ -228,7 +233,7 @@ export default function BookBundle() {
                     {/* CTA Action */}
                     <div className="pt-4 flex flex-col sm:flex-row items-start sm:items-center gap-4">
                       <button 
-                        onClick={handleActionClick}
+                        onClick={() => handleActionClick(step)}
                         className="font-body-md text-xs uppercase tracking-widest text-[#0A1628] bg-[#ffe16d] px-6 py-3 rounded font-bold hover:shadow-[0_0_20px_rgba(255,225,109,0.3)] transition-all"
                       >
                         {step.actionText}

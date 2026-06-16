@@ -1,10 +1,10 @@
 export default function RevealBox() {
   return (
-    <section className="py-32 max-w-[1440px] mx-auto px-6 md:px-16">
+    <section className="py-16 md:py-32 max-w-[1440px] mx-auto px-6 md:px-16">
       <div className="glass-card rounded-xl p-8 md:p-16 relative overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10 items-center">
           <div>
-            <h2 className="font-display-lg text-4xl md:text-5xl text-secondary-fixed mb-8 leading-tight">
+            <h2 className="font-display-lg text-3xl md:text-5xl text-secondary-fixed mb-8 leading-tight">
               Same Effort. Same Offer. Different Result. Why?
             </h2>
             <p className="font-body-lg font-light text-lg text-on-surface-variant mb-6 leading-[1.6em]">

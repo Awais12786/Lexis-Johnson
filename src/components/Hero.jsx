@@ -9,7 +9,7 @@ export default function Hero() {
           <p className="font-body-lg font-light text-lg text-on-surface-variant max-w-lg leading-[1.6em]">
             Every window for the next twelve months, mapped and waiting inside the app, before the calendar gets there. No charts to read, no terms to learn, just the year laid out in advance.
           </p>
-          <a href="#strategic-application-gateway" className="btn-gold font-body-lg uppercase tracking-widest font-bold px-10 py-4 rounded-sm inline-block">
+          <a href="https://go.hi-ha.org/GIFT-TAGG" target="_blank" rel="noopener noreferrer" className="btn-gold font-body-lg uppercase tracking-widest font-bold px-10 py-4 rounded-sm inline-block">
             Show Me My Year
           </a>
         </div>

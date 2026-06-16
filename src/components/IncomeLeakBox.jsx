@@ -1,14 +1,14 @@
 export default function IncomeLeakBox() {
   return (
-    <section className="py-32 bg-[#142038] relative border-y border-white/5">
+    <section className="py-16 md:py-32 bg-[#142038] relative border-y border-white/5">
       <div className="max-w-[1440px] mx-auto px-6 md:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
-            <h2 className="font-display-lg text-4xl text-gray-200 mb-6">Still Wide Awake At 3 AM Over This?</h2>
+            <h2 className="font-display-lg text-3xl md:text-4xl text-gray-200 mb-6">Still Wide Awake At 3 AM Over This?</h2>
             <p className="font-body-lg font-light leading-[1.6em] text-on-surface-variant mb-8">
               Ten questions, a few minutes, and one written report that names the exact window where income has been quietly leaking, the kind of leak that survives a new offer, a new funnel, and a new coach because none of those ever touched it. By morning, the leak has a name and a fix.
             </p>
-            <a href="#strategic-application-gateway" className="btn-gold font-body-lg uppercase tracking-widest font-bold px-8 py-3 rounded-sm inline-block">
+            <a href="https://go.hi-ha.org/3AMAnswer" target="_blank" rel="noopener noreferrer" className="btn-gold font-body-lg uppercase tracking-widest font-bold px-8 py-3 rounded-sm inline-block">
               Find My Leak
             </a>
           </div>
