@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #0A1628;
+    color: #d8e2ff;
+  }
+}
+
+@layer components {
+  .btn-gold {
+    background: linear-gradient(135deg, #ffe16d, #e9c400);
+    color: #0a1628;
+    border: none;
+    box-shadow: 0 0 20px rgba(255, 225, 109, 0.3);
+    transition: box-shadow 0.3s ease;
+  }
+  .btn-gold:hover {
+    box-shadow: 0 0 30px rgba(255, 225, 109, 0.5);
+  }
+  .glass-card {
+    background: rgba(20, 32, 56, 0.2);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 225, 109, 0.15);
+  }
+  .img-blend {
+    -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+    mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+  }
+  .img-blend-linear {
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  }
+  .founder-blend {
+    -webkit-mask-image: radial-gradient(ellipse at center, black 50%, transparent 90%);
+    mask-image: radial-gradient(ellipse at center, black 50%, transparent 90%);
+  }
+  .icon-crop {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .book-cover {
+    box-shadow: -10px 0 20px rgba(0,0,0,0.5), inset 2px 0 5px rgba(255,255,255,0.2);
+  }
+}
