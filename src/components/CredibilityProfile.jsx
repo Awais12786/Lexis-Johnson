@@ -1,28 +1,60 @@
-import LexisImage from "../assets/Lexis1.jpg";
+import React from 'react';
+import LexisImage from "../assets/Lexis1.jpg"; // Aapka import yahan safe hai
 
 export default function CredibilityProfile() {
+  // Ab array mein sirf aapke bataye huay 5 points hain
+  const marqueeContent = [
+    "55,000+ Consultations",
+    "•",
+    "54 Years of Practice",
+    "•",
+    "Fifth-Generation Cycle Intelligence",
+    "•",
+    "Done For You",
+    "•",
+    "Full Year In Advance",
+    "•"
+  ];
+
   return (
-    <section className="py-16 md:py-32 max-w-[1440px] mx-auto px-6 md:px-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="relative h-[400px] md:h-[600px] rounded-lg overflow-hidden flex justify-center items-center">
-          <img
-            alt="Lexis Johnson"
-            className="w-full h-full object-cover"
-            src={LexisImage}
-          />
+    <>
+      {/* Custom Animations */}
+      <style>
+        {`
+          @keyframes globalScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          @keyframes floatingWave {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+          }
+          .run-marquee {
+            display: flex;
+            width: max-content;
+            animation: globalScroll 25s linear infinite; /* Speed adjusted for shorter text */
+          }
+          .run-wave {
+            animation: floatingWave 4.5s ease-in-out infinite;
+          }
+        `}
+      </style>
+
+      <section 
+        className="relative z-30 shadow-lg overflow-hidden py-5 run-wave border-y border-black/10"
+        style={{ backgroundColor: '#FFD413' }}
+      >
+        <div className="w-full flex items-center">
+          <div className="run-marquee flex items-center gap-12 text-black font-sans text-sm md:text-base font-extrabold uppercase tracking-widest">
+            {/* Array ko double map kiya hai taakay bina kisi break ke loop chalta rahay */}
+            {[...marqueeContent, ...marqueeContent].map((item, index) => (
+              <span key={index} className="whitespace-nowrap flex-shrink-0">
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
-        <div>
-          <h2 className="font-display-lg text-3xl md:text-4xl text-secondary-fixed mb-6">
-            54 Years. 55,000 Conversations. One System.
-          </h2>
-          <p className="font-body-lg font-light leading-[1.6em] text-on-surface-variant">
-            Lexis Johnson is the fifth generation in her family trained to read
-            these cycles, and the first to put that work into software. 54 years
-            of lineage, 55,000 recorded conversations, and one definitive
-            system.
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

@@ -7,63 +7,41 @@ export default function BookBundle() {
     {
       id: 1,
       stepNum: "01",
-      title: "Foundation",
-      subtitle: "The Core Cycle Blueprint (Volume I)",
-      shortDesc: "Understand the fundamental mathematics of the 12-month calendar before market forces hit.",
-      detailedDesc: "This introductory volume maps out your basic timing windows. Learn to stop forcing sales launches and expansion during naturally restrictive seasonal cycles.",
+      title: "Step 1 — Log In",
+      subtitle: "Access Your Dashboard",
+      shortDesc: "Create your account and access your dashboard. Your current month chart is already there waiting.",
+      detailedDesc: "Create your account and access your dashboard. Your current month chart is already there waiting.",
       status: "UNLOCKED",
-      badgeText: "Complimentary with Audit",
-      actionText: "Get Book 1",
-      actionLink: "https://www.amazon.ca/Timing-Aggregator-Recognition-Founders-Decisions/dp/B0GSZL7Y2Y",
-      icon: "auto_stories",
+      badgeText: "Step 1",
+      actionText: "Access The Timing Aggregator™ Now",
+      actionLink: "https://user-dashboard-timingaggregator.replit.app/",
+      icon: "login",
     },
     {
       id: 2,
       stepNum: "02",
-      title: "Expansion",
-      subtitle: "Market Entry & Scaling Windows (Volume II)",
-      shortDesc: "Spot the precise multi-week windows where launch friction drops to zero.",
-      detailedDesc: "We transition from protective timing to offensive timing. Discover how to align product drops and major campaigns with systemic windfalls.",
-      status: "SEALED",
-      badgeText: "Locked • Requires Gate Approval",
-      actionText: "Unlock via Gateway Application",
-      icon: "lock",
+      title: "Step 2 — Read Your Report",
+      subtitle: "Done-For-You Cycle Reports",
+      shortDesc: "Scroll through your done-for-you cycle reports. No interpretation required.",
+      detailedDesc: "Scroll through your done-for-you cycle reports. No interpretation required.",
+      status: "UNLOCKED",
+      badgeText: "Step 2",
+      actionText: "Access The Timing Aggregator™ Now",
+      actionLink: "https://user-dashboard-timingaggregator.replit.app/",
+      icon: "description",
     },
     {
       id: 3,
       stepNum: "03",
-      title: "Acceleration",
-      subtitle: "The Velocity Trigger (Volume III)",
-      shortDesc: "Isolate and deploy capital only during high-yield velocity signals.",
-      detailedDesc: "Deep analysis of the micro-moments. This volume shows you how to execute critical hires and major investments when market momentum is guaranteed to support them.",
-      status: "SEALED",
-      badgeText: "Locked • Private Advisory",
-      actionText: "Request Access via Gate",
-      icon: "lock",
-    },
-    {
-      id: 4,
-      stepNum: "04",
-      title: "Mastery",
-      subtitle: "Institutional Timing Aggregator (Volume IV)",
-      shortDesc: "Automate your entire executive suite’s decision calendar.",
-      detailedDesc: "Written specifically for enterprise founders running multi-department organizations. Bring absolute harmony to your operational schedule.",
-      status: "SEALED",
-      badgeText: "Locked • Private Advisory",
-      actionText: "Request Access via Gate",
-      icon: "lock",
-    },
-    {
-      id: 5,
-      stepNum: "05",
-      title: "Legacy",
-      subtitle: "Multigenerational Wealth Cycles (Volume V)",
-      shortDesc: "The definitive playbook of fifth-generation cycle intelligence.",
-      detailedDesc: "Lexis Johnson's master treatise. A blueprint for asset protection, wealth preservation, and timing market transitions across generational macro tides.",
-      status: "SEALED",
-      badgeText: "Locked • Elite Membership",
-      actionText: "Request Access via Gate",
-      icon: "lock",
+      title: "Step 3 — Act With Certainty",
+      subtitle: "Apply The Intelligence",
+      shortDesc: "Apply the intelligence to your decisions. Launch in the right window. Hold in the wrong one.",
+      detailedDesc: "Apply the intelligence to your decisions. Launch in the right window. Hold in the wrong one. Know the difference before you commit a dollar.",
+      status: "UNLOCKED",
+      badgeText: "Step 3",
+      actionText: "Access The Timing Aggregator™ Now",
+      actionLink: "https://user-dashboard-timingaggregator.replit.app/",
+      icon: "check_circle",
     }
   ];
 
@@ -81,23 +59,23 @@ export default function BookBundle() {
   };
 
   return (
-    <section className="py-16 md:py-32 bg-[#0A1628] border-t border-white/5 relative overflow-hidden">
+    <section className="py-16 md:py-32 bg-transparent border-t border-white/5 relative overflow-hidden">
       
       {/* Ambient Depth Lights */}
-      <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-[#ffe16d] opacity-[0.015] rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-[#FFD700] opacity-[0.015] rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="max-w-[1200px] mx-auto px-6 md:px-12 relative z-10">
         
         {/* Header */}
         <div className="text-center mb-24">
-          <span className="text-xs font-bold tracking-widest text-[#ffe16d]/70 uppercase block mb-4 font-body-md">
-            The Structural Value Ladder
+          <span className="text-xs font-bold tracking-widest text-[#FFD700]/70 uppercase block mb-4 font-body-md">
+            How It Works
           </span>
-          <h2 className="font-display-lg text-4xl md:text-5xl text-[#ffe16d] font-bold leading-tight max-w-3xl mx-auto">
-            The System Started With A Book. Now It's Five.
+          <h2 className="font-display-lg text-4xl md:text-5xl text-[#FFD700] font-bold leading-tight max-w-3xl mx-auto">
+            Three Steps. Full Year. Done.
           </h2>
           <p className="font-body-md text-white/60 font-light text-sm max-w-lg mx-auto mt-6">
-            Click on any developmental stage of the Timing System below to explore its structural focus and access level.
+            Click on any step below to explore how the Timing System guides your decisions.
           </p>
         </div>
 
@@ -105,9 +83,9 @@ export default function BookBundle() {
         <div className="relative max-w-[900px] mx-auto">
           
           {/* Desktop Center Track */}
-          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#ffe16d]/30 via-white/5 to-transparent -translate-x-1/2 z-0"></div>
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#FFD700]/30 via-white/5 to-transparent -translate-x-1/2 z-0"></div>
           {/* Mobile Left Track */}
-          <div className="md:hidden absolute left-[23px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#ffe16d]/30 via-white/5 to-transparent z-0"></div>
+          <div className="md:hidden absolute left-[23px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#FFD700]/30 via-white/5 to-transparent z-0"></div>
 
           <div className="space-y-16 md:space-y-12">
             {timelineSteps.map((step, idx) => {
@@ -124,7 +102,7 @@ export default function BookBundle() {
                     <div className={`text-right ${isActive ? 'opacity-100' : 'opacity-40 group-hover:opacity-70'} transition-opacity duration-300`}>
                       {isEven && (
                         <div>
-                          <span className={`text-[10px] tracking-widest font-bold uppercase ${step.status === 'UNLOCKED' ? 'text-[#ffe16d]' : 'text-white/40'}`}>
+                          <span className={`text-[10px] tracking-widest font-bold uppercase ${step.status === 'UNLOCKED' ? 'text-[#FFD700]' : 'text-white/40'}`}>
                             {step.badgeText}
                           </span>
                           <h3 className="font-display-lg text-2xl text-white mt-1 mb-2">{step.title}</h3>
@@ -137,8 +115,8 @@ export default function BookBundle() {
                     <div className="w-[48px] h-[48px] flex items-center justify-center shrink-0">
                       <div className={`w-12 h-12 rounded-full flex items-center justify-center font-display-lg text-sm font-bold border transition-all duration-500 shadow-xl ${
                         isActive 
-                          ? 'bg-gradient-to-r from-[#ffe16d] to-[#e9c400] border-[#ffe16d] text-[#0A1628] scale-110 ring-4 ring-[#ffe16d]/20' 
-                          : 'bg-[#0A1628] border-white/20 text-white/50 group-hover:border-[#ffe16d]/40'
+                          ? 'bg-gradient-to-r from-[#FFD700] to-[#F6C542] border-[#FFD700] text-[#0A1628] scale-110 ring-4 ring-[#FFD700]/20' 
+                          : 'bg-transparent border-white/20 text-white/50 group-hover:border-[#FFD700]/40'
                       }`}>
                         {step.stepNum}
                       </div>
@@ -148,7 +126,7 @@ export default function BookBundle() {
                     <div className={`text-left ${isActive ? 'opacity-100' : 'opacity-40 group-hover:opacity-70'} transition-opacity duration-300`}>
                       {!isEven && (
                         <div>
-                          <span className={`text-[10px] tracking-widest font-bold uppercase ${step.status === 'UNLOCKED' ? 'text-[#ffe16d]' : 'text-white/40'}`}>
+                          <span className={`text-[10px] tracking-widest font-bold uppercase ${step.status === 'UNLOCKED' ? 'text-[#FFD700]' : 'text-white/40'}`}>
                             {step.badgeText}
                           </span>
                           <h3 className="font-display-lg text-2xl text-white mt-1 mb-2">{step.title}</h3>
@@ -164,14 +142,14 @@ export default function BookBundle() {
                     <div className="shrink-0 pt-1">
                       <div className={`w-12 h-12 rounded-full flex items-center justify-center font-display-lg text-sm font-bold border transition-all duration-500 shadow-lg ${
                         isActive 
-                          ? 'bg-gradient-to-r from-[#ffe16d] to-[#e9c400] border-[#ffe16d] text-[#0A1628] ring-4 ring-[#ffe16d]/20' 
-                          : 'bg-[#0A1628] border-white/20 text-white/50'
+                          ? 'bg-gradient-to-r from-[#FFD700] to-[#F6C542] border-[#FFD700] text-[#0A1628] ring-4 ring-[#FFD700]/20' 
+                          : 'bg-transparent border-white/20 text-white/50'
                       }`}>
                         {step.stepNum}
                       </div>
                     </div>
                     <div className={`${isActive ? 'opacity-100' : 'opacity-50'} transition-opacity duration-300 pt-2`}>
-                      <span className={`text-[10px] tracking-widest font-bold uppercase ${step.status === 'UNLOCKED' ? 'text-[#ffe16d]' : 'text-white/40'}`}>
+                      <span className={`text-[10px] tracking-widest font-bold uppercase ${step.status === 'UNLOCKED' ? 'text-[#FFD700]' : 'text-white/40'}`}>
                         {step.badgeText}
                       </span>
                       <h3 className="font-display-lg text-xl text-white mt-1 mb-2">{step.title}</h3>
@@ -195,14 +173,14 @@ export default function BookBundle() {
                 className="bg-[rgba(20,32,56,0.5)] backdrop-blur-xl p-8 md:p-10 rounded-xl border border-white/10 relative overflow-hidden shadow-2xl animate-fadeIn"
               >
                 {/* Visual Accent Badge */}
-                <div className="absolute top-0 right-0 h-[3px] w-32 bg-gradient-to-r from-transparent to-[#ffe16d]"></div>
+                <div className="absolute top-0 right-0 h-[3px] w-32 bg-gradient-to-r from-transparent to-[#FFD700]"></div>
 
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
                   
                   {/* Decorative Icon */}
                   <div className={`w-16 h-16 rounded-lg flex items-center justify-center shrink-0 border ${
                     step.status === 'UNLOCKED' 
-                      ? 'bg-[#ffe16d]/10 border-[#ffe16d]/30 text-[#ffe16d]' 
+                      ? 'bg-[#FFD700]/10 border-[#FFD700]/30 text-[#FFD700]' 
                       : 'bg-white/5 border-white/10 text-white/40'
                   }`}>
                     <span className="material-symbols-outlined text-3xl font-light">
@@ -217,7 +195,7 @@ export default function BookBundle() {
                         Stage {step.stepNum} 
                       </span>
                       <span className={`text-[10px] tracking-widest px-3 py-1 rounded-full font-bold uppercase font-mono ${
-                        step.status === 'UNLOCKED' ? 'bg-[#ffe16d]/10 text-[#ffe16d]' : 'bg-red-500/10 text-red-400'
+                        step.status === 'UNLOCKED' ? 'bg-[#FFD700]/10 text-[#FFD700]' : 'bg-white/10 text-white/50'
                       }`}>
                         {step.status}
                       </span>
@@ -234,7 +212,7 @@ export default function BookBundle() {
                     <div className="pt-4 flex flex-col sm:flex-row items-start sm:items-center gap-4">
                       <button 
                         onClick={() => handleActionClick(step)}
-                        className="font-body-md text-xs uppercase tracking-widest text-[#0A1628] bg-[#ffe16d] px-6 py-3 rounded font-bold hover:shadow-[0_0_20px_rgba(255,225,109,0.3)] transition-all"
+                        className="font-body-md text-xs uppercase tracking-widest btn-gold px-6 py-3 rounded font-bold transition-all"
                       >
                         {step.actionText}
                       </button>

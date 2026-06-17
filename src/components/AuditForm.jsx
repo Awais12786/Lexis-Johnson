@@ -87,18 +87,18 @@ export default function AuditForm() {
   };
 
   return (
-    <section id="strategic-application-gateway" className="py-32 bg-[#0A1628] w-full px-6 md:px-8 lg:px-16 relative overflow-hidden scroll-mt-24">
+    <section id="strategic-application-gateway" className="py-32 bg-transparent w-full px-6 md:px-8 lg:px-16 relative overflow-hidden scroll-mt-24">
       
       {/* Background ambient glow for premium design aesthetic */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#ffe16d] opacity-[0.03] rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#FFD700] opacity-[0.03] rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="max-w-[1280px] mx-auto relative z-10">
         
         {/* Split Card Container */}
-        <div className="flex flex-col lg:flex-row w-full rounded-2xl overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-[#050B14]">
+        <div className="flex flex-col lg:flex-row w-full rounded-2xl overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-transparent">
           
           {/* LEFT COLUMN: Context & Trust-Building Elements */}
-          <div className="lg:w-[40%] relative p-10 lg:p-14 flex flex-col justify-between bg-gradient-to-br from-[#142038] to-[#0A1628]">
+          <div className="lg:w-[40%] relative p-10 lg:p-14 flex flex-col justify-between bg-transparent">
             
             {/* Subtle overlay decorative pattern */}
             <div className="absolute bottom-0 right-0 opacity-10 pointer-events-none">
@@ -167,7 +167,7 @@ export default function AuditForm() {
                 </p>
                 
                 {/* Visual Security Badge with ID */}
-                <div className="inline-block bg-[#050B14] border border-white/10 rounded-lg px-6 py-3 mb-8">
+                <div className="inline-block bg-transparent border border-white/10 rounded-lg px-6 py-3 mb-8">
                   <span className="block text-[10px] tracking-widest text-on-surface-variant/50 uppercase font-mono">Reference Code</span>
                   <span className="font-mono text-secondary-fixed text-lg font-bold tracking-wider">{applicationId}</span>
                 </div>
@@ -198,9 +198,9 @@ export default function AuditForm() {
                       value={formData.fullName}
                       onChange={handleInputChange}
                       placeholder="John Doe" 
-                      className={`w-full bg-[#0A1628]/50 border ${errors.fullName ? 'border-[#ff5e5e]' : 'border-white/10'} rounded-lg p-3 font-body-md text-sm text-on-surface placeholder:text-on-surface-variant/30 focus:outline-none focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all`}
+                      className={`w-full bg-transparent/50 border ${errors.fullName ? 'border-[#FFD700]' : 'border-white/10'} rounded-lg p-3 font-body-md text-sm text-on-surface placeholder:text-on-surface-variant/30 focus:outline-none focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all`}
                     />
-                    {errors.fullName && <p className="text-[#ff5e5e] text-[11px] font-light mt-1">{errors.fullName}</p>}
+                    {errors.fullName && <p className="text-[#FFD700] text-[11px] font-light mt-1">{errors.fullName}</p>}
                   </div>
 
                   {/* Corporate Email input */}
@@ -212,9 +212,9 @@ export default function AuditForm() {
                       value={formData.email}
                       onChange={handleInputChange}
                       placeholder="name@company.com" 
-                      className={`w-full bg-[#0A1628]/50 border ${errors.email ? 'border-[#ff5e5e]' : 'border-white/10'} rounded-lg p-3 font-body-md text-sm text-on-surface placeholder:text-on-surface-variant/30 focus:outline-none focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all`}
+                      className={`w-full bg-transparent/50 border ${errors.email ? 'border-[#FFD700]' : 'border-white/10'} rounded-lg p-3 font-body-md text-sm text-on-surface placeholder:text-on-surface-variant/30 focus:outline-none focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all`}
                     />
-                    {errors.email && <p className="text-[#ff5e5e] text-[11px] font-light mt-1">{errors.email}</p>}
+                    {errors.email && <p className="text-[#FFD700] text-[11px] font-light mt-1">{errors.email}</p>}
                   </div>
 
                   {/* Business Type input */}
@@ -226,9 +226,9 @@ export default function AuditForm() {
                       value={formData.industry}
                       onChange={handleInputChange}
                       placeholder="e.g. SaaS, Consulting" 
-                      className={`w-full bg-[#0A1628]/50 border ${errors.industry ? 'border-[#ff5e5e]' : 'border-white/10'} rounded-lg p-3 font-body-md text-sm text-on-surface placeholder:text-on-surface-variant/30 focus:outline-none focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all`}
+                      className={`w-full bg-transparent/50 border ${errors.industry ? 'border-[#FFD700]' : 'border-white/10'} rounded-lg p-3 font-body-md text-sm text-on-surface placeholder:text-on-surface-variant/30 focus:outline-none focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all`}
                     />
-                    {errors.industry && <p className="text-[#ff5e5e] text-[11px] font-light mt-1">{errors.industry}</p>}
+                    {errors.industry && <p className="text-[#FFD700] text-[11px] font-light mt-1">{errors.industry}</p>}
                   </div>
 
                   {/* Website URL input */}
@@ -240,9 +240,9 @@ export default function AuditForm() {
                       value={formData.website}
                       onChange={handleInputChange}
                       placeholder="https://company.com" 
-                      className={`w-full bg-[#0A1628]/50 border ${errors.website ? 'border-[#ff5e5e]' : 'border-white/10'} rounded-lg p-3 font-body-md text-sm text-on-surface placeholder:text-on-surface-variant/30 focus:outline-none focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all`}
+                      className={`w-full bg-transparent/50 border ${errors.website ? 'border-[#FFD700]' : 'border-white/10'} rounded-lg p-3 font-body-md text-sm text-on-surface placeholder:text-on-surface-variant/30 focus:outline-none focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all`}
                     />
-                    {errors.website && <p className="text-[#ff5e5e] text-[11px] font-light mt-1">{errors.website}</p>}
+                    {errors.website && <p className="text-[#FFD700] text-[11px] font-light mt-1">{errors.website}</p>}
                   </div>
                 </div>
 
@@ -255,9 +255,9 @@ export default function AuditForm() {
                     value={formData.leakDescription}
                     onChange={handleInputChange}
                     placeholder="Describe the friction or bottleneck in your business operations..." 
-                    className={`w-full bg-[#0A1628]/50 border ${errors.leakDescription ? 'border-[#ff5e5e]' : 'border-white/10'} rounded-lg p-3.5 font-body-md text-sm text-on-surface placeholder:text-on-surface-variant/30 focus:outline-none focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all resize-none`}
+                    className={`w-full bg-transparent/50 border ${errors.leakDescription ? 'border-[#FFD700]' : 'border-white/10'} rounded-lg p-3.5 font-body-md text-sm text-on-surface placeholder:text-on-surface-variant/30 focus:outline-none focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all resize-none`}
                   ></textarea>
-                  {errors.leakDescription && <p className="text-[#ff5e5e] text-[11px] font-light mt-0.5">{errors.leakDescription}</p>}
+                  {errors.leakDescription && <p className="text-[#FFD700] text-[11px] font-light mt-0.5">{errors.leakDescription}</p>}
                 </div>
 
                 {/* Dropdowns in a 2-column grid */}
@@ -268,7 +268,7 @@ export default function AuditForm() {
                       name="offerInterest"
                       value={formData.offerInterest}
                       onChange={handleInputChange}
-                      className={`w-full bg-[#0A1628] border ${errors.offerInterest ? 'border-[#ff5e5e]' : 'border-white/10'} rounded-lg p-3 font-body-md text-sm text-on-surface focus:outline-none focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all appearance-none cursor-pointer`}
+                      className={`w-full bg-transparent border ${errors.offerInterest ? 'border-[#FFD700]' : 'border-white/10'} rounded-lg p-3 font-body-md text-sm text-on-surface focus:outline-none focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all appearance-none cursor-pointer`}
                     >
                       <option value="">Select an offer</option>
                       <option value="Timing Aggregator App">Timing Aggregator App</option>
@@ -276,7 +276,7 @@ export default function AuditForm() {
                       <option value="Institutional Audit">Institutional Audit</option>
                     </select>
                     <span className="material-symbols-outlined absolute right-3 top-8.5 text-on-surface-variant pointer-events-none">expand_more</span>
-                    {errors.offerInterest && <p className="text-[#ff5e5e] text-[11px] font-light mt-1">{errors.offerInterest}</p>}
+                    {errors.offerInterest && <p className="text-[#FFD700] text-[11px] font-light mt-1">{errors.offerInterest}</p>}
                   </div>
 
                   <div className="space-y-1.5 relative">
@@ -285,7 +285,7 @@ export default function AuditForm() {
                       name="budgetRange"
                       value={formData.budgetRange}
                       onChange={handleInputChange}
-                      className={`w-full bg-[#0A1628] border ${errors.budgetRange ? 'border-[#ff5e5e]' : 'border-white/10'} rounded-lg p-3 font-body-md text-sm text-on-surface focus:outline-none focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all appearance-none cursor-pointer`}
+                      className={`w-full bg-transparent border ${errors.budgetRange ? 'border-[#FFD700]' : 'border-white/10'} rounded-lg p-3 font-body-md text-sm text-on-surface focus:outline-none focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all appearance-none cursor-pointer`}
                     >
                       <option value="">Select a range</option>
                       <option value="$10k - $25k">$10k - $25k</option>
@@ -293,7 +293,7 @@ export default function AuditForm() {
                       <option value="$50k+">$50k+</option>
                     </select>
                     <span className="material-symbols-outlined absolute right-3 top-8.5 text-on-surface-variant pointer-events-none">expand_more</span>
-                    {errors.budgetRange && <p className="text-[#ff5e5e] text-[11px] font-light mt-1">{errors.budgetRange}</p>}
+                    {errors.budgetRange && <p className="text-[#FFD700] text-[11px] font-light mt-1">{errors.budgetRange}</p>}
                   </div>
                 </div>
 
@@ -301,7 +301,7 @@ export default function AuditForm() {
                 <button 
                   type="submit" 
                   disabled={isSubmitting}
-                  className={`w-full bg-gradient-to-r from-[#ffe16d] to-[#e9c400] text-[#0a1628] font-body-lg uppercase tracking-widest font-bold py-4 rounded-lg shadow-[0_0_20px_rgba(255,225,109,0.2)] hover:shadow-[0_0_30px_rgba(255,225,109,0.5)] transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3 ${isSubmitting ? 'opacity-80 cursor-not-allowed' : ''}`}
+                  className={`w-full btn-gold text-[#0A1628] font-body-lg uppercase tracking-widest font-bold py-4 rounded-lg shadow-[0_0_20px_rgba(255,225,109,0.2)] hover:shadow-[0_0_30px_rgba(255,225,109,0.5)] transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3 ${isSubmitting ? 'opacity-80 cursor-not-allowed' : ''}`}
                 >
                   {isSubmitting ? (
                     <>

@@ -7,21 +7,58 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: #0A1628;
+    background: linear-gradient(135deg, #0A1628 0%, #10213D 30%, #142A4A 70%, #1C3055 100%);
+    background-attachment: fixed;
     color: #d8e2ff;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+  input, textarea, select, button, label, p, span, a {
+    font-family: 'Inter', sans-serif;
   }
 }
 
 @layer components {
   .btn-gold {
-    background: linear-gradient(135deg, #FFD700, #FFC107);
-    color: #0a1628;
+    background: linear-gradient(135deg, #FFD700, #FFCF40, #F6C542);
+    color: #0A1628;
     border: none;
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
     transition: box-shadow 0.3s ease;
   }
   .btn-gold:hover {
     box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+  }
+  .btn-gold-outline {
+    background: transparent;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  .btn-gold-outline:hover {
+    background: rgba(255, 215, 0, 0.1);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  }
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #FFD700, #FFCF40, #F6C542);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+  .hero-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150vw;
+    height: 150vh;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(16, 33, 61, 0.6) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
   }
   .glass-card {
     background: rgba(20, 32, 56, 0.2);

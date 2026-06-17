@@ -1,33 +1,24 @@
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import BentoGrid from './components/BentoGrid';
-import RevealBox from './components/RevealBox';
-import SignalGrid from './components/SignalGrid';
-import AppBox from './components/AppBox';
-import IncomeLeakBox from './components/IncomeLeakBox';
-import AuditSection from './components/AuditSection';
-import BookBundle from './components/BookBundle';
-import CredibilityProfile from './components/CredibilityProfile';
-import FinalCTA from './components/FinalCTA';
-import AuditForm from './components/AuditForm';
 import Footer from './components/Footer';
+
+// Pages
+import Home from './pages/Home';
+import About from './pages/About';
+import Insights from './pages/Insights';
+import Contact from './pages/Contact';
 
 function App() {
   return (
     <>
       <Navbar />
       <main className="flex-grow pt-32">
-        <Hero />
-        <BentoGrid />
-        <RevealBox />
-        <SignalGrid />
-        <AppBox />
-        <IncomeLeakBox />
-        <AuditSection />
-        <BookBundle />
-        <CredibilityProfile />
-        <FinalCTA />
-        <AuditForm />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/insights" element={<Insights />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </main>
       <Footer />
     </>

@@ -1,6 +1,6 @@
 export default function AuditSection() {
   return (
-    <section className="py-20 md:py-40 bg-[#050B14] relative">
+    <section className="py-20 md:py-40 bg-transparent relative">
       <div className="max-w-[1440px] mx-auto px-6 md:px-16 text-center">
         <h2 className="font-display-lg text-3xl md:text-5xl text-secondary-fixed mb-6">For Founders Who Want The Whole Map</h2>
         <p className="font-body-lg font-light leading-[1.6em] text-on-surface-variant max-w-2xl mx-auto mb-12">

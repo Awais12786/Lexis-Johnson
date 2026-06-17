@@ -1,6 +1,6 @@
 export default function IncomeLeakBox() {
   return (
-    <section className="py-16 md:py-32 bg-[#142038] relative border-y border-white/5">
+    <section className="py-16 md:py-32 bg-transparent relative border-y border-white/5">
       <div className="max-w-[1440px] mx-auto px-6 md:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
