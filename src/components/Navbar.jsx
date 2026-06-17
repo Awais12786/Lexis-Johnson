@@ -41,14 +41,12 @@ export default function Navbar() {
           <a href="https://user-dashboard-timingaggregator.replit.app/" target="_blank" rel="noopener noreferrer" className="btn-gold font-body-md uppercase tracking-widest px-6 py-2 rounded inline-block">Access TAGG</a>
         </div>
 
-        {/* Mobile Hamburger Icon */}
+        {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-secondary-fixed p-2 focus:outline-none" 
+          className="md:hidden text-secondary-fixed p-2 focus:outline-none uppercase tracking-widest text-sm font-semibold" 
           onClick={() => setIsOpen(!isOpen)}
         >
-          <span className="material-symbols-outlined text-3xl">
-            {isOpen ? 'close' : 'menu'}
-          </span>
+          Menu
         </button>
       </div>
 
