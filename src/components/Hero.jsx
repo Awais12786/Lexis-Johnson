@@ -7,7 +7,7 @@ export default function Hero() {
       className="relative min-h-[80vh] w-full overflow-hidden flex items-center pt-28 md:pt-0"
     >
       <div className="hero-glow"></div>
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 md:px-16 flex flex-col md:flex-row items-center justify-between h-full md:min-h-[80vh]">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 md:px-16 flex flex-col md:flex-row items-center justify-between h-full md:min-h-[80vh] pb-8 md:pb-0">
         
         {/* Text Column (50% to 55% on desktop) */}
         <div className="w-full md:w-[55%] lg:w-[50%] space-y-8 pb-12 md:py-32 flex-shrink-0 z-30 relative">
@@ -39,7 +39,7 @@ export default function Hero() {
         
         {/* Image Container for Desktop & Mobile */}
         {/* Switched to pure flex flow, removed absolute and bottom anchoring. Vertically centered with items-center. */}
-        <div className="relative w-full md:w-[45%] lg:w-[50%] h-auto z-20 flex items-center justify-end pointer-events-none mt-8 md:mt-0 -mr-4 md:-mr-12 lg:-mr-16 bg-transparent">
+        <div className="relative w-full md:w-[45%] lg:w-[50%] h-auto z-20 flex items-center justify-end pointer-events-none mt-8 md:mt-0 -mr-4 md:-mr-12 lg:-mr-16 bg-transparent mb-6 md:mb-0 pb-2 md:pb-0">
           <img
             alt="Dashboard graphic and golden clock mechanism"
             className="w-full h-auto object-contain object-left mix-blend-screen"
