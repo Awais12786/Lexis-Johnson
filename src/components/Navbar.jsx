@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const navItems = [
-  { label: 'Home', to: '/' },
-  { label: 'About', to: '/about' },
-  { label: 'Insights', to: '/insights' },
-  { label: 'Contact', to: '/contact' },
+  { label: "Home", to: "/" },
+  { label: "About", to: "/about" },
+  { label: "Insights", to: "/insights" },
+  { label: "Contact", to: "/contact" },
 ];
 
 export default function Navbar() {
@@ -14,22 +14,26 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-transparent/90 backdrop-blur-xl border-b border-white/10 shadow-2xl">
       <div className="flex justify-between items-center px-6 md:px-16 py-6 max-w-[1440px] mx-auto">
-        <Link to="/" className="font-display-lg text-2xl md:text-3xl text-secondary-fixed-dim tracking-tighter hover:text-secondary-fixed transition-colors text-gradient-gold">
-          The Timing Aggregator<sup className="text-xs font-light tracking-wide">™</sup>
+        <Link
+          to="/"
+          className="font-display-lg text-2xl md:text-3xl text-secondary-fixed-dim tracking-tighter hover:text-secondary-fixed transition-colors text-gradient-gold"
+        >
+          The Timing Aggregator
+          <sup className="text-xs font-light tracking-wide">™</sup>
         </Link>
-        
+
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 items-center">
           {navItems.map(({ label, to }) => (
             <NavLink
               key={to}
               to={to}
-              end={to === '/'}
+              end={to === "/"}
               className={({ isActive }) =>
                 `font-body-md uppercase tracking-widest transition-colors ${
                   isActive
-                    ? 'text-secondary-fixed'
-                    : 'text-on-surface-variant hover:text-secondary-fixed'
+                    ? "text-secondary-fixed"
+                    : "text-on-surface-variant hover:text-secondary-fixed"
                 }`
               }
             >
@@ -38,12 +42,19 @@ export default function Navbar() {
           ))}
         </div>
         <div className="hidden md:block">
-          <a href="https://user-dashboard-timingaggregator.replit.app/" target="_blank" rel="noopener noreferrer" className="btn-gold font-body-md uppercase tracking-widest px-6 py-2 rounded inline-block">Access TAGG</a>
+          <a
+            href="https://user-dashboard-timingaggregator.replit.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-gold font-body-md uppercase tracking-widest px-6 py-2 rounded inline-block"
+          >
+            Access TAGG
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden text-secondary-fixed p-2 focus:outline-none uppercase tracking-widest text-sm font-semibold" 
+        <button
+          className="md:hidden text-secondary-fixed p-2 focus:outline-none uppercase tracking-widest text-sm font-semibold"
           onClick={() => setIsOpen(!isOpen)}
         >
           Menu
@@ -63,7 +74,15 @@ export default function Navbar() {
               {label}
             </Link>
           ))}
-          <a href="https://user-dashboard-timingaggregator.replit.app/" target="_blank" rel="noopener noreferrer" className="btn-gold font-body-md uppercase tracking-widest px-6 py-3 rounded text-center mt-4" onClick={() => setIsOpen(false)}>Access TAGG</a>
+          <a
+            href="https://user-dashboard-timingaggregator.replit.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-gold font-body-md uppercase tracking-widest px-6 py-3 rounded text-center mt-4"
+            onClick={() => setIsOpen(false)}
+          >
+            Access TAGG
+          </a>
         </div>
       )}
     </nav>
